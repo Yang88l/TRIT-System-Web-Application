@@ -1,0 +1,16 @@
+@media (min-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container h1 {
+    font-size: 2em;
+  }
+    
+}

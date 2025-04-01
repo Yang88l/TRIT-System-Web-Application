@@ -1,0 +1,37 @@
+<!-- Condition -->
+<html>
+    <body>
+        {% if condition %}
+            <h>Yes</h>
+        {% else %}
+            <h>No</h>
+        {% endif %}
+    </body>
+</html>
+
+<!-- List -->
+<html>
+    <body>
+        <ul>
+            {% for item in items %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
+
+<!-- Link -->
+<html>
+    <body>
+        <a href="{{ url_for('about') }}">{{ text }}</a>
+    </body>
+</html>
+
+<!-- Form -->
+<html>
+    <body>
+        <form action="{{ url_for('submit') }}" method="post">
+            <input type="text" name="name" placeholder="Enter your name">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
